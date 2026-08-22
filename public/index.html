@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home · CodeGram</title><meta name="description" content="Mini social media platform - CodeAlpha Task 2">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/style.css"></head><body>
+<header class="nav"><div class="container nav-inner"><a href="/" class="logo">Code<span>Gram</span></a><nav class="nav-links" id="nav-links"></nav></div></header>
+<main class="container"><div class="layout">
+  <section>
+    <form class="card composer" id="composer-form">
+      <div class="composer-row"><img class="avatar" id="composer-avatar" src=""><textarea name="text" placeholder="What's happening?" maxlength="1000" required></textarea></div>
+      <div class="actions"><input type="url" name="image" placeholder="Optional image URL (https://…)"><button class="btn btn-primary" type="submit">Post</button></div>
+    </form>
+    <div id="feed"></div>
+  </section>
+  <aside class="sidebar"><div class="card"><h3>Who to follow</h3><div id="suggestions"></div></div>
+    <div class="card"><h3>About</h3><p style="color:var(--muted);font-size:14px;margin:0">CodeAlpha Task 2 — profiles, posts, comments, likes & follows. Built with Express + MongoDB.</p></div>
+  </aside>
+</div></main>
+<script src="/js/api.js"></script><script src="/js/auth.js"></script><script src="/js/feed.js"></script></body></html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Profile · CodeGram</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/style.css"></head><body>
+<header class="nav"><div class="container nav-inner"><a href="/" class="logo">Code<span>Gram</span></a><nav class="nav-links" id="nav-links"></nav></div></header>
+<main class="container" id="profile">
+  <div class="card profile-head" id="profile-head"></div>
+  <h2 class="section-title">Posts</h2>
+  <div id="profile-posts"></div>
+</main>
+<div class="modal-bg" id="edit-modal"><div class="modal">
+  <h3 style="margin-top:0">Edit profile</h3>
+  <form id="edit-form">
+    <div class="field"><label>Name</label><input name="name" required></div>
+    <div class="field"><label>Bio</label><textarea name="bio" maxlength="200" rows="3"></textarea></div>
+    <div class="field"><label>Avatar URL</label><input name="avatar" type="url" placeholder="https://…"></div>
+    <div style="display:flex;gap:10px;justify-content:flex-end"><button type="button" class="btn btn-outline" id="edit-cancel">Cancel</button><button class="btn btn-primary" type="submit">Save</button></div>
+  </form>
+</div></div>
+<script src="/js/api.js"></script><script src="/js/auth.js"></script><script src="/js/profile.js"></script></body></html>
