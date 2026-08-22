@@ -1,4 +1,4 @@
-# CodeAlpha Task 2 — Mini Social Media Platform
+# Social Media Platform
 
 A mini social network built with **Express.js + MongoDB** and a **vanilla HTML/CSS/JS** frontend, per the CodeAlpha task sheet.
 
